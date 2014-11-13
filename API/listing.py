@@ -40,4 +40,4 @@ class getAllListings(restful.Resource):
         _listingslist = []
         for i in _listings:
             _listingslist.append(i)
-        return {'data':_listingslist}
+        return _listingslist

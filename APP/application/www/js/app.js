@@ -2,8 +2,8 @@
 
    angular.module('app').controller('AppController', function($scope) {
     $scope.posts = []
-    $.get("http://127.0.0.1:5000/listing", function(data){
-  alert("Data: " + data);
+    $.get("http://192.168.1.103:5000/listing", function(data){
+  alert("Data: " + JSON.type(data));
 });
 
     $scope.doSomething = function() {
